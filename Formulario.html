@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="..\estilos-copia.css">
+    <link rel="icon" href="logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title id="solapa">El Arca</title>  
+<div class="flex-container">
+    <a name="Cómocontactarnos"><h3 class= "subtitulos">Dejanos acá tus consultas</h3></a>
+</div>
+    <form action="" name="formulario" method="get" id="formulario">
+      <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre">
+      <br>
+      <input type="text" name="apellido" id="apellido" maxlength="30" placeholder="Apellido"> 
+      <br>
+      <input type="text" name="consulta" id="consulta" maxlength="200" placeholder="Escribe tu consulta"> 
+      <br>
+      <input type="email" name="contacto" id="contacto" maxlength="30" placeholder="Email"> 
+      <br>
+      <input type="checkbox" name="terminos" id="terminos"> Términos y Condiciones
+      <br>
+      <input type="submit" id="btn" name="btn" value="Enviar">
+    </form>
+    <script>
+  (function(){
+      var formulario = document.getElementsByName('formulario')[0],
+          boton = document.getElementById('btn');
+
+      var validarNombre = function(e){
+          if (formulario.nombre.value == 0){
+              alert("Completa el campo nombre");
+              e.preventDefault();
+          }
+      };
+
+      var validarApellido = function(e){
+          if (formulario.apellido.value == 0){
+              alert("Completa el campo apellido");
+              e.preventDefault();
+          }
+      };
+
+      var validarConsulta = function(e){
+          if (formulario.consulta.value == 0){
+              alert("Escribe tu consulta");
+              e.preventDefault();
+          }
+      };
+      
+      var validarContacto = function(e){
+          if (formulario.contacto.value == 0){
+              alert("Dejanos tu email");
+              e.preventDefault();
+          }
+      };
+      var validarCheckbox = function(e){
+          if (formulario.terminos.checked == false){
+              alert("Acepta los términos y condiciones");
+              e.preventDefault();
+          }
+      };
+
+      var validar = function(e){
+          validarNombre(e);
+          validarApellido(e);
+          validarConsulta(e);
+          validarContacto(e);
+          validarCheckbox(e);
+      };
+      formulario.addEventListener("submit", validar);
+  }())
+    </script>
+
+<footer class="footer">
+    <div class="envíos">
+    <h3>¡Envíos a todo el país!</h3>
+    </div>
+        <li><a class="contacto" href="tel:010-020-0340"> +54 2604 5472819</a>
+        </li>
+        <li>
+            <i class="fa-light fa-envelope"></i>
+            <a class="contacto" href="mailto:elarca@email.com">elarca@email.com</a>
+        </li>
+
+</footer>

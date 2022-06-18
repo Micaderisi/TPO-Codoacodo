@@ -1,0 +1,258 @@
+/* CSS estilos */
+
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+* {
+    margin: 0.2em; 
+    padding: 0.2em;
+    box-sizing: border-box;
+}
+
+#solapa { 
+    color: grey; 
+    font-size: 10em;
+    font-family: Calibri; 
+}
+
+h1 {
+    color: goldenrod; 
+    font-size: 500%; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+    margin-top: 0.5px;
+    margin-bottom: 0.5px;
+}
+
+
+/* Slogan*/
+
+.transicion {
+    background: #f3e7ce;
+    color: olive;
+    padding: 2px;
+    text-align: center;
+    font-style: italic;
+}
+
+.transicion:hover {
+    background: #f1d69f;
+    color: #240c52;
+    padding: 18px 24px;
+    text-align: center;
+    font-style: italic;
+    transition-property: all; 
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
+
+.subtitulos {
+    color: brown;
+    text-align: center; 
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+}
+
+/* SECCIONES */
+
+div p {
+    color: black; 
+    font-size: 1em; 
+    text-align: justify;
+    Font-family: 'Calibri'; 
+    margin: 1.5em;
+}
+
+.secciones-principales {
+    margin: 2rem;
+}
+
+.conjunto-recuadros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.formulario-contacto {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+
+.recuadro {
+    padding: 3rem 1rem 0.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .2);
+    background: #fafafa;
+    min-width: 20rem;
+    width: 17%;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+#textorecuadro {
+
+    color: (197, 139, 127); 
+    border-width: 1em; 
+    text-align: justify; 
+    font-family: Calibri; 
+    font-size: 1em; 
+    margin: 0.2em; 
+    padding: 0.2em;
+    width: 300px;
+    height: 300px;
+    margin-right: 50px; 
+    margin-top: 50px;
+}
+
+
+/* Quienes somos */
+
+#texto-presentacion {
+    color: black; 
+    font-size: 1em; 
+    text-align: justify;
+    Font-family: 'Calibri'; 
+    margin-left: 2.5em;
+    margin-right: 2.5em;      
+}
+
+
+/*Carrusel*/
+
+.galeria {
+    width: 500px;
+    height: 500px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+
+
+.imagenes {
+    display: flex;  
+    overflow-y: auto;
+    width: 500px;
+    height: 500px;
+    margin-right: 10px; 
+    margin-top: 0.1px;
+    object-fit: cover;
+    position: relative;
+}
+
+
+/* Donde encontrarnos */
+
+#iframe {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 160px;
+    margin-bottom: 50px;
+
+}
+
+/* Formulario */
+
+#formulario {
+    width: 50%;
+    padding: 15px;
+    margin: 15px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1px;
+    margin-bottom: 120px;
+    display:inline-flexbox;
+    box-sizing: content-box;
+    text-align: center;
+    border-color: grey; 
+    border-style:dashed;
+  }
+
+  .formulario-icon {
+    padding: 1.5rem 0.5rem 0.2rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    background: white;
+    min-width: 3rem;
+    width: 3%;
+    max-width: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    cursor: grab;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+#contactanos {
+    color: (197, 139, 127); 
+    border-width: 1em; 
+    text-align: right; 
+    font-family: Calibri; 
+    font-size: 1em; 
+    margin: 0.2em; 
+    padding: 0.2em;
+    width: 100px;
+    margin-right: 50px; 
+    margin-top: 50px;
+    color: black;
+}
+
+  
+/* Footer */
+
+.footer {
+    background: #ececb6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 150px;
+    
+}
+
+
+.contacto {
+    color: #31305a;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    display: inline-block;
+    Font-family: calibri;
+    object-fit: cover;
+    position: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+.envíos {
+    font-family: Calibri;
+    text-align: match-parent;
+    text-decoration: double;
+    color: rgba(10, 68, 19, 0.795);
+
+}
+
